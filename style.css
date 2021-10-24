@@ -40,6 +40,7 @@ h1 {
 }
 input {
     border: none;
+    width: 100%;
 }
 input:focus {
     outline: none;
