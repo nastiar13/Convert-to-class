@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Todo List</title>
+    <title>Convert to class</title>
 </head>
 <body>
     <div class="container">
@@ -14,28 +14,34 @@
         <div class="left">
             <div class="input-container">
                 <div class="form">
-                    <form action="" method="post">
+                    <form method="post">
                         <h1>CONTACT</h1>
 
                         
-                        <input type="text" name="name" id="name" placeholder="NAME">
+                        <input type="text" name="name" id="name" placeholder="NAME" required>
                         <div class="bottom-line"></div>
-                        <input type="tel" name="phone" id="phone" placeholder="PHONE">
+                        <input type="tel" name="phone" id="phone" placeholder="PHONE" required>
                         <div class="bottom-line"></div>
-                        <input type="email" name="email" id="email" placeholder="E-MAIL">
+                        <input type="email" name="email" id="email" placeholder="E-MAIL" required>
                         <div class="bottom-line"></div>
-                        <input type="text" name="address" id="address" placeholder="ADDRESS">
+                        <input type="text" name="address" id="address" placeholder="ADDRESS" required>
                         <div class="bottom-line"></div>
-                        <button type="submit" class="btn-submit">ADD</button>
+                        <button type="submit" class="btn-add">SEND</button>
                     </form>
+                    
+                    <img class="img-plant" src="img/plant.png" alt="">
+
+                    
                 </div>
                 
             </div>
         </div>
 
         <div class="right">
-            <div class="list-container">
-                
+            <div class="data-container">
+                <div class="table">
+
+                </div>
             </div>
         </div>
     </div>

@@ -1,6 +1,11 @@
 body {
-    font-family: 'Signika', sans-serif;}
-.left {
+    font-family: 'Signika', sans-serif;
+}
+.container {
+    display: flex;
+}
+.left, .right {
+    margin-top: 2.5em;
     width: 50%;
 }
 
@@ -12,16 +17,182 @@ body {
     height: 85vh;
     background: linear-gradient(30deg, #ABCB88 50%, #BAD59E 50%);
 }
+
 .form {
+    position: relative;
     width: 80%;
-    height: 66vh;
+    height: 72vh;
     margin: 0 auto;
     background-color: #fff;
+    border-radius: 10px;
+    
 }
 form {
-    border: 1px solid black;
     width: 50%;
-    float: right;
+    height: 59vh;
+    position: absolute;
+    right: 3em;
+    z-index: 2;
+}
+h1 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+input {
+    border: none;
+}
+input:focus {
+    outline: none;
+
+}
+input::placeholder {
+    color: #afa9a9;
+    letter-spacing: .1em;
+}
+
+input:focus::placeholder {
+    color: #323030;
+}
+.bottom-line {
+    height: 1px;
+    width: 100%;
+    background-color: #dddada;
+    margin-bottom: 2em;
+}
+
+.btn-add {
+    border: none;
+    padding: 8px;
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #0D0D0D;
+    color: white;
+    letter-spacing: .2em;
+    box-shadow: 1em 1em 1em #aaa;
+}
+
+.img-plant {
+    position: absolute;
+    left: -5em;
+    bottom: -2em;
+    width: 18em;
+    height: min-content;
+}
+
+.data-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: .5em;
+    padding-top: 2.2em;
+    width: 95%;
+    height: 85vh;
+    background: linear-gradient(-30deg, #ABCB88 50%, #BAD59E 50%);
+}
+
+.table {
+    width: 99%;
+    max-height: 92%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    scrollbar-width: thin;
     text-align: center;
-    margin-right: 3em;
+    overflow-y: auto;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    
+}
+.table-head {
+    top: 0;
+    position: sticky;
+    width: 100%;
+    height: 6vh;
+    background-color: #6C7AE0;
+    border: 1px solid black;
+    border-radius: 10px;
+    
+}
+.table-body {
+    height: 4vh;
+    font-size: 13px;
+    text-align: center;
+}
+
+.delete {
+    width: 3em;
+    
+}
+.btn-delete {
+    cursor: pointer;
+    padding: 1px 7px;
+    border: none;
+    background-color: rgb(145, 5, 5);
+    color: white;
+}
+.btn-delete:hover {
+    background-color: rgb(211, 22, 22);
+}
+.btn-delete:active {
+    background-color: rgb(240, 51, 51);
+}
+
+th, td {
+    border: 1px solid black;
+}
+.r-1 {
+    background-color: #e0dde9;
+}
+
+
+.img-call {
+    max-width: 40em;  
+}
+
+@media screen and (max-width:1100px) {
+    .container {
+        flex-direction: column;
+    }
+    .left, .right {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 70%;
+    }
+}
+@media screen and (max-width: 817px){
+    .container {
+        flex-direction: column;
+    }
+    .left, .right {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 70%;
+    }
+    .form {
+        position: static;
+        padding-top: 1em;
+    }
+    form {
+        position: static;
+        margin: 0 auto;
+    }
+    .img-plant {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 504px) {
+    .container {
+        flex-direction: column;
+    }
+    .left, .right {
+        margin: 0 auto;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .form {
+        width: 90%;
+    }
 }
