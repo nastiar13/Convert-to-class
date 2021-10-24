@@ -169,14 +169,22 @@ th, td {
         margin: 0 auto;
         margin-bottom: 20px;
         width: 70%;
+       
+    }
+    .input-container, .data-container {
+      height: 500px;
     }
     .form {
         position: static;
         padding-top: 1em;
+        height: 400px;
     }
     form {
         position: static;
         margin: 0 auto;
+    }
+    .table {
+      overflow: hidden;
     }
     .img-plant {
         display: none;
