@@ -1,0 +1,27 @@
+body {
+    font-family: 'Signika', sans-serif;}
+.left {
+    width: 50%;
+}
+
+.input-container {
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 2.2em;
+    width: 95%;
+    height: 85vh;
+    background: linear-gradient(30deg, #ABCB88 50%, #BAD59E 50%);
+}
+.form {
+    width: 80%;
+    height: 66vh;
+    margin: 0 auto;
+    background-color: #fff;
+}
+form {
+    border: 1px solid black;
+    width: 50%;
+    float: right;
+    text-align: center;
+    margin-right: 3em;
+}
