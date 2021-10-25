@@ -149,7 +149,8 @@ th, td {
 
 
 .img-call {
-    max-width: 40em;  
+    max-width: 40em; 
+    height: 72vh; 
 }
 
 @media screen and (max-width:1100px) {
